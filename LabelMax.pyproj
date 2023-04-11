@@ -61,9 +61,11 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include=".env" />
+    <Content Include="label_app\db\local_database.db" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="label_app\" />
+    <Folder Include="label_app\db\" />
     <Folder Include="label_app\utils\" />
     <Folder Include="label_app\scripts\" />
     <Folder Include="label_app\schema\" />
