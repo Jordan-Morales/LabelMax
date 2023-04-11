@@ -61,7 +61,7 @@ termcolor
 threadpoolctl
 tqdm
 typing_extensions
-tzdata==2023.3
+tzdata
 uritemplate
 urllib3
 Werkzeug
