@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>551436b2-3387-4aae-b9cc-d9ed91c6bc5e</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>gmail_api.py</StartupFile>
+    <StartupFile>label_app\scripts\gmail_api.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -24,12 +24,17 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="app.py" />
-    <Compile Include="config.py" />
-    <Compile Include="feature_extraction.py" />
-    <Compile Include="gmail_api.py" />
+    <Compile Include="label_app\schema\database.py" />
+    <Compile Include="label_app\schema\email.py" />
+    <Compile Include="label_app\schema\label.py" />
+    <Compile Include="label_app\utils\config.py" />
+    <Compile Include="label_app\scripts\feature_extraction.py" />
+    <Compile Include="label_app\scripts\gmail_api.py" />
     <Compile Include="LabelMax.py" />
-    <Compile Include="model.py" />
-    <Compile Include="preprocessing.py" />
+    <Compile Include="label_app\scripts\model.py" />
+    <Compile Include="label_app\scripts\preprocessing.py" />
+    <Compile Include="label_app\utils\local_database.py" />
+    <Compile Include="label_app\utils\util_manager.py" />
   </ItemGroup>
   <ItemGroup>
     <Interpreter Include="env311\">
@@ -56,6 +61,12 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include=".env" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="label_app\" />
+    <Folder Include="label_app\utils\" />
+    <Folder Include="label_app\scripts\" />
+    <Folder Include="label_app\schema\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
