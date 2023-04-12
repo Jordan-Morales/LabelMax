@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>551436b2-3387-4aae-b9cc-d9ed91c6bc5e</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>label_app\scripts\gmail_api.py</StartupFile>
+    <StartupFile>LabelMax.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>

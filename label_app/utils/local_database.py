@@ -268,10 +268,11 @@ def check_and_init_database():
         create_tables()
         print('Tables created.')
 
-# Main function call
-if __name__ == '__main__':
+
+
+
+### Main Function
+def main():
     print("local_database.py is running")
     # Check and initialize the database.
     check_and_init_database()
-
-

@@ -3,24 +3,26 @@
 # Import and prep dotenv
 import os
 import os.path
-from dotenv import load_dotenv
+##from dotenv import load_dotenv
 #import time
 import label_app.scripts.gmail_api as gmail_api_script
 import label_app.utils.local_database as db_script
 # import label_app.util.util_manager as util_script
 
 ## Load environment variables from the .env file
-load_dotenv()
+#load_dotenv()
 
 ## Access the environment variables in your code
 #api_key = os.getenv('GMAIL_API_KEY')
-debug = os.getenv('DEBUG') == 'True'
+##debug = os.getenv('DEBUG') == 'True'
 
-# Run the gmail_api_script __main__ function
-gmail_api_script.__main__()
-
-# Run the db_script __main__ function
-db_script.__main__()
+# Run the gmail_api_script main function
+gmail_api_script.main()
+print("Gmail API Script Complete")
+# Run the db_script main function
+db_script.main()
+print("Database Script Complete")
+print("LabelMax Complete")
 
 
 ### Import the necessary libraries and any associated or required; google-api-python-client, numpy, pandas, nltk, scikit-learn, gensim, tensorflow, flask.
