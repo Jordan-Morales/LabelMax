@@ -1,13 +1,27 @@
+### Main Entry Point
+
 # Import and prep dotenv
-#import os
-#from dotenv import load_dotenv
+import os
+import os.path
+from dotenv import load_dotenv
+#import time
+import label_app.scripts.gmail_api as gmail_api_script
+import label_app.utils.local_database as db_script
+# import label_app.util.util_manager as util_script
 
 ## Load environment variables from the .env file
-#load_dotenv()
+load_dotenv()
 
 ## Access the environment variables in your code
-#api_key = os.getenv('API_KEY')
-#debug = os.getenv('DEBUG') == 'True'
+#api_key = os.getenv('GMAIL_API_KEY')
+debug = os.getenv('DEBUG') == 'True'
+
+# Run the gmail_api_script __main__ function
+gmail_api_script.__main__()
+
+# Run the db_script __main__ function
+db_script.__main__()
+
 
 ### Import the necessary libraries and any associated or required; google-api-python-client, numpy, pandas, nltk, scikit-learn, gensim, tensorflow, flask.
 ##import os
